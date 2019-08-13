@@ -3,7 +3,7 @@ A component decorator used to decorate a decoree with a toolbar and a status bar
 "
 Class {
 	#name : #ITComponentDecorator,
-	#superclass : #ComposablePresenter,
+	#superclass : #SpPresenter,
 	#instVars : [
 		'toolbar',
 		'statusbar',
@@ -16,7 +16,7 @@ Class {
 ITComponentDecorator class >> defaultSpec [
 	<spec: #default>
 	
-	^ SpecLayout composed 
+	^ SpLayout composed 
 		newColumn: [ :column |
 			column 
 				newRow: #toolbar height: ITToolBar defaultHeight;

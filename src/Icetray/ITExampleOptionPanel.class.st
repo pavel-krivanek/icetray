@@ -17,7 +17,7 @@ Class {
 { #category : #specs }
 ITExampleOptionPanel class >> defaultSpec [
 	<spec: #default>
-	^ SpecLayout composed newColumn: [ :col | col add: #label height: self toolbarHeight ]
+	^ SpLayout composed newColumn: [ :col | col add: #label height: self toolbarHeight ]
 ]
 
 { #category : #accessing }

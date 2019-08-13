@@ -24,7 +24,7 @@ Class {
 ITErrorDialog class >> defaultSpec [
 	<spec: #default>
 	
-	^ SpecLayout composed 
+	^ SpLayout composed 
 		newRow: [ :row |
 			row 
 				newColumn: #iconPanel width: 40;

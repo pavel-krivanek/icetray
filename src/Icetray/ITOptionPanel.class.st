@@ -3,7 +3,7 @@ I am an abstract class defining the basic methods required by a panel to be embe
 "
 Class {
 	#name : #ITOptionPanel,
-	#superclass : #ComposablePresenter,
+	#superclass : #SpPresenter,
 	#category : #'Icetray-Dialog'
 }
 

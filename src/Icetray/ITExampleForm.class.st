@@ -1,6 +1,6 @@
 Class {
 	#name : #ITExampleForm,
-	#superclass : #ComposablePresenter,
+	#superclass : #SpPresenter,
 	#instVars : [
 		'form'
 	],
@@ -11,7 +11,7 @@ Class {
 ITExampleForm class >> defaultSpec [
 	<spec: #default>
 	
-	^ SpecLayout composed 
+	^ SpLayout composed 
 			newColumn: #form
 ]
 

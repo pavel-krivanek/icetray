@@ -3,7 +3,7 @@ A toolbar
 "
 Class {
 	#name : #ITToolBar,
-	#superclass : #ComposablePresenter,
+	#superclass : #SpPresenter,
 	#instVars : [
 		'panel',
 		'leftPanel',
@@ -42,7 +42,7 @@ ITToolBar class >> defaultMode [
 ITToolBar class >> defaultSpec [
 	<spec: #default>
 
-	^ SpecLayout composed
+	^ SpLayout composed
 		newRow: #panel height: self defaultHeight
 ]
 
@@ -117,7 +117,7 @@ ITToolBar >> initializeWidgets [
 		hResizing: #spaceFill;
 		vResizing: #spaceFill;
 		color: self color;
-		asSpecAdapter.
+		asSpAdapter.
 
 	panel widget 
 		addMorphBack: leftPanel;

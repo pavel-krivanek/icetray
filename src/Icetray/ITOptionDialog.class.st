@@ -28,7 +28,7 @@ Class {
 ITOptionDialog class >> defaultSpec [
 	<spec>
 	
-	^ SpecLayout composed
+	^ SpLayout composed
 		newRow: [ :row | 
 			row
 				newColumn: #typeList width: 180;
@@ -111,7 +111,7 @@ ITOptionDialog >> initializeTypeList [
 
 { #category : #initialization }
 ITOptionDialog >> initializeWidgets [
-	contentPanel := self emptyPanel asSpecAdapter.
+	contentPanel := self emptyPanel asSpAdapter.
 	typeList := self newFastTable.
 	self initializeTypeList.
 			

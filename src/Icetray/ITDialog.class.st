@@ -4,7 +4,7 @@ I'm an abstract class, check my subclasses.
 "
 Class {
 	#name : #ITDialog,
-	#superclass : #ComposablePresenter,
+	#superclass : #SpPresenter,
 	#instVars : [
 		'acceptButton',
 		'cancelButton'

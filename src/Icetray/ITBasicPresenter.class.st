@@ -3,7 +3,7 @@ Abstract superclass for presenters with a toolbar and a status bar
 "
 Class {
 	#name : #ITBasicPresenter,
-	#superclass : #ComposablePresenter,
+	#superclass : #SpPresenter,
 	#category : #'Icetray-Core'
 }
 

@@ -1,6 +1,6 @@
 Class {
 	#name : #ITTextField,
-	#superclass : #ComposablePresenter,
+	#superclass : #SpPresenter,
 	#instVars : [
 		'errorIcon',
 		'validations',
@@ -44,7 +44,7 @@ ITTextField class >> exampleVertical [
 ITTextField class >> horizontal [
 	<spec: #horizontal>
 	
-	^ SpecLayout composed
+	^ SpLayout composed
 		newRow: [ :row | 
 			row
 				add: #labelWidget width: self iceLabelWidth;
@@ -56,7 +56,7 @@ ITTextField class >> horizontal [
 ITTextField class >> vertical [
 	<spec: #vertical>
 	
-	^ SpecLayout composed
+	^ SpLayout composed
 		newColumn: [ :column | 
 			column
 				add: #labelWidget height: self inputTextHeight;

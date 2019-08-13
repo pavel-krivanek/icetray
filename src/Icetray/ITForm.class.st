@@ -1,6 +1,6 @@
 Class {
 	#name : #ITForm,
-	#superclass : #DynamicComposablePresenter,
+	#superclass : #SpDynamicPresenter,
 	#instVars : [
 		'fields',
 		'validateOnChange',
